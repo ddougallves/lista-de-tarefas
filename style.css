@@ -17,8 +17,7 @@
 }
 
 .tasks {
-  width: 100%;
-  max-width: 32rem;
+  width: 32rem;
   padding: 1rem;
   /* border: 1px solid; */
 }
@@ -99,8 +98,7 @@
 }
 
 .task__editor {
-  width: 100%;
-  max-width: 32rem;
+  width: 32rem;
   margin-top: 5rem;
   padding: 1rem;
   border-radius: .25rem;
@@ -163,4 +161,13 @@
 
 .task__editor .task__save:hover {
   background-color: #c53727;
+}
+
+@media (max-with:768px) {
+
+  .tasks,
+  .tasks__editor {
+    width: 100%;
+  }
+  
 }
