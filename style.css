@@ -163,11 +163,11 @@
   background-color: #c53727;
 }
 
-@media (max-with:768px) {
+@media (max-width:768px) {
 
   .tasks,
   .tasks__editor {
     width: 100%;
   }
-  
+
 }
