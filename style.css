@@ -165,6 +165,10 @@
 
 @media (max-width:768px) {
 
+  .body {
+    display: block;
+  }
+
   .tasks,
   .tasks__editor {
     width: 100%;
