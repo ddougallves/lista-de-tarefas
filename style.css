@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.tasks {
+  width: 100%;
+  max-width: 32rem;
+  padding: 1rem;
+  /* border: 1px solid; */
+}
+
+.tasks__title {
+  margin-bottom: 4rem;
+  color: #1F1F1F;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.task__list {
+  list-style-type: none;
+  /* border: 1px solid; */
+}
+
+.task__item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+.task__item--add {
+  margin-top: 4rem;
+  padding: .75rem;
+  border-radius: .25rem;
+  color: white;
+  background-color: #DB4C3F;
+  cursor: pointer;
+}
+
+.task__item--add:hover {
+  background-color: #c53727;
+}
+
+.task__checkbox {
+  color: #DB4C3F;
+  cursor: pointer;
+}
+
+.task__checkbox--blank {
+  /* color: #6D6D6D!important; */
+}
+ 
+.task__item .task__title { 
+  margin-top: .25rem;
+  font-size: .875rem;  
+  font-weight: 400;
+}
+
+.task__item--checked .task__title {
+  color: #6D6D6D;
+  text-decoration: line-through;
+}
+
+.task__view {
+  margin-left: auto;
+  color: #6D6D6D;
+  cursor: pointer;
+}
+
+.task__delete {
+  color: #DB4C3F;
+  cursor: pointer;
+}
+
+.task__editor-area {
+  position: fixed;
+  top: 0;left: 0;
+  right: 0;bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #1f1f1fc4;
+}
+
+.task__editor {
+  width: 100%;
+  max-width: 32rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: .25rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 1rem .125rem #1f1f1f1f;
+}
+
+.task__editor .task__content {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.task__editor .task__title {
+  padding: .5rem 1rem;
+  border: unset;
+  color: #1F1F1F;
+  font-size: 1.25rem;
+  font-weight: 500;
+  outline: unset;
+}
+
+.task__editor .task__desc {
+  padding: .5rem 1rem;
+  border: unset;
+  color: #1F1F1F;
+  font-size: .875rem;
+  outline: unset;
+  resize: none;
+}
+
+.task__action {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.task__cancel,
+.task__save {
+  padding: .75rem;
+  border-radius: .25rem; 
+  border: unset;
+  cursor: pointer;
+}
+
+.task__cancel {
+  color: #1F1F1F;
+  background-color:  #FAFAFA;
+  font-weight: 600;
+}
+
+.task__cancel:hover {
+  background-color:  #e5e5e5;
+}
+
+.task__editor .task__save {
+  color: white;
+  background-color: #DB4C3F;
+} 
+
+.task__editor .task__save:hover {
+  background-color: #c53727;
+}

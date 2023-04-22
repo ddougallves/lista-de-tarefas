@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de Tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body class="body">
+
+    <section class="tasks">
+
+      <header class="tasks__header">
+        <h1 class="tasks__title">Lista de tarefas</h1>
+      </header>
+
+        <ul class="task__list">
+
+          <li class="task__item task__item--add">
+            <span class="material-icons-round">
+              add
+            </span> 
+            <h2 class="task__title">Adicionar Tarefa</h2>
+          </li>
+        </ul>
+
+        <div class="task__editor-area hidden">
+          <form action="" data-type="new" data-id="" class="task__editor"> 
+            <div class="task__content">
+              <input type="text" name="title" id="" class="task__title" placeholder="Título da tarefa">
+              <textarea name="description" id="" cols="30" rows="10" class="task__desc" placeholder="descrição da tarefa"></textarea>
+            </div>
+            <div class="task__action">
+              <button class="task__cancel">Cancelar</button>
+              <button class="task__save">Salvar</button>
+            </div>
+          </form> 
+        </div> 
+
+    </section>
+
+    <script src="functions.js"></script> 
+    <script src="classes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html> 
